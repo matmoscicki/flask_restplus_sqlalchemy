@@ -6,7 +6,7 @@ import decimal
 from logging import Logger, getLogger
 from typing import List, Dict
 from flask_sqlalchemy import SQLAlchemy
-from flask_restplus import Api, fields, Model
+from flask_restx import Api, fields, Model
 
 
 class ApiModelFactory:
@@ -16,7 +16,7 @@ class ApiModelFactory:
         marshal
 
 
-        :param Api api: flask_restplus Api instance to which is needed for \
+        :param Api api: flask_restx Api instance to which is needed for \
                     api.model function call
 
         :param SQLAlchemy db: instance with the models load, failure to do \
