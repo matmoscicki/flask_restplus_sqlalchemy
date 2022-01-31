@@ -5,7 +5,7 @@ from io import open
 from os import path
 from setuptools import find_packages, setup
 
-from flask_restplus_sqlalchemy import __version__
+#  from flask_restplus_sqlalchemy import __version__
 
 here = path.abspath(path.dirname(__file__))
 
@@ -20,7 +20,7 @@ with open(path.join(here, 'requirements-dev.txt')) as f:
 
 setup(
     name='flask_restplus_sqlalchemy',
-    version=__version__,
+    version='0.0.3',
     description='Flask RestPlus SqlAlchemy',
     long_description=long_description,
     long_description_content_type='text/markdown',
